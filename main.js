@@ -45,6 +45,33 @@ $(document).ready(function(){
         answer: "Best Swimmer"
     };
 
+    //Bird answers
+
+    const birds = {
+        answerOne: "Largest",
+        answerTwo: "Smallest",
+        answerThree: "Fastest",
+        answerFour: "Deadliest",
+        answerFive: "Rarest",
+    }
+
+    //Baby Answers
+    
+    const babies = {
+        src: "https://i.pinimg.com/736x/fc/e1/06/fce106e4ece99c2fc370c21eac5d36b9.jpg",
+        //answerOne: imgOne,
+    }
+
+
+    //Baseball Answers
+    const baseball = {
+        answerOne: "Oldest Team",
+        answerTwo: "Most World Series Championships",
+        answerThree: "Most Wins",
+        answerFour: "Newest Team",
+        answerFive: "Most Upsets",
+    }
+
     
     //Cat Prompts
 
@@ -92,20 +119,55 @@ $(document).ready(function(){
     });
 
 
+    //Bird Prompts
 
-    $('.cheetahs').click(function($event) {
-        
-        console.log("clicked");
+    $('.birdsForOne').click(function($event) {
+        prompt (birds.answerOne);
     });
 
-    $('.babies').click(function($event) {
-        
-        console.log("clicked");
+    $('.birdsForTwo').click(function($event) {
+        prompt (birds.answerTwo);
     });
 
-    $('.philosophy').click(function($event) {
-        
-        console.log("clicked");
+    $('.birdsForThree').click(function($event) {
+        prompt (birds.answerThree);
+    });
+
+    $('.birdsForFour').click(function($event) {
+        prompt (birds.answerFour);
+    });
+
+    $('.birdsForFive').click(function($event) {
+        prompt (birds.answerFive);
+    });
+
+    //Babies Prompt
+
+    $('.babiesForOne').click(function($event) {
+        prompt (babies.src);
+    });
+
+
+    //Baseball Prompt
+
+    $('.baseballForOne').click(function($event) {
+        prompt (baseball.answerOne);
+    });
+
+    $('.baseballForTwo').click(function($event) {
+        prompt (baseball.answerTwo);
+    });
+
+    $('.baseballForThree').click(function($event) {
+        prompt (baseball.answerThree);
+    });
+
+    $('.baseballForFour').click(function($event) {
+        prompt (baseball.answerFour);
+    });
+
+    $('.baseballForFive').click(function($event) {
+        prompt (baseball.answerFive);
     });
 
 });
