@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     //Answers for Cats
+
     const catOneHundy = { 
         answer: 'Orange and black',
         question: 'tiger',
@@ -20,6 +21,28 @@ $(document).ready(function(){
 
     const catFiveHundy = {
         answer: 'Found in North America'
+    };
+
+    //Dog Answers
+
+    const dogOneHundy ={
+        answer: "Most common"
+    };
+
+    const dogTwoHundy ={
+        answer: "Largest"
+    };
+
+    const dogThreeHundy ={
+        answer: "Smallest"
+    };
+
+    const dogFourHundy ={
+        answer: "Police dog"
+    };
+
+    const dogFiveHundy ={
+        answer: "Best Swimmer"
     };
 
     
@@ -45,10 +68,30 @@ $(document).ready(function(){
         prompt (catFiveHundy.answer );
     });
 
-    $('.dogs').click(function($event) {
-        
-        console.log("clicked");
+
+    //Dog Prompts
+
+    $('.dogsForOne').click(function($event) {
+        prompt (dogOneHundy.answer);
     });
+
+    $('.dogsForTwo').click(function($event) {
+        prompt (dogTwoHundy.answer);
+    });
+
+    $('.dogsForThree').click(function($event) {
+        prompt (dogThreeHundy.answer);
+    });
+
+    $('.dogsForFour').click(function($event) {
+        prompt (dogFourHundy.answer);
+    });
+
+    $('.dogsForFive').click(function($event) {
+        prompt (dogFiveHundy.answer);
+    });
+
+
 
     $('.cheetahs').click(function($event) {
         
