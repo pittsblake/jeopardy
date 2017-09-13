@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    let score = 0;
+
+    
     //Cat Category Questions and Answers
 
     const catCategory = [
@@ -34,15 +37,23 @@ $(document).ready(function(){
             points: 500,
         },
 
-    ]
+    ];
 
     //
     //Cat Prompts
     //
     $('.catsForOne').click(function($event) {
         $('.catBtnOne').attr("disabled", true);
-        prompt (catCategory[0].question, catCategory[0].choices);
-        
+        const input = prompt (catCategory[0].question, catCategory[0].choices);
+        if (input === catCategory[0].answer){
+            alert ('Correct!')
+            score += catCategory[0].points;
+            $('#score').html(score);
+        } else{
+            alert ('Incorrect!')
+            score -= catCategory[0].points;
+            $('#score').html(score);
+        }       
     });
 
     $('.catsForTwo').click(function($event) {
@@ -194,4 +205,18 @@ $(document).ready(function(){
         prompt (baseball.answerFive);
     });
 
+
+
+    //
+    //Score
+    //
+   // let score = 0;
+   // const scoreUpdate = () => {
+      //  $('#score').html(score);
+      // score += catCategory[0].points;
+    //}
+
 });
+
+
+
