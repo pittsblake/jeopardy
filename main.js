@@ -1,27 +1,66 @@
 $(document).ready(function(){
 
-    //Answers for Cats
+    //Cat Category Questions and Answers
 
-    const catOneHundy = { 
-        answer: 'Orange and black',
-        question: 'tiger',
-    };
+    const catCategory = [
+        {
+            question: 'This cat is Orange and Black',
+            answer: 'Tiger',
+            choices: 'Tiger, Lion, or Leopard',
+            points: 100,
+        },
+        {
+            question: 'This cat is the Fastest',
+            answer: 'Cheetah',
+            choices: 'Leopard, Lynx, or Cheetah',
+            points: 200,
+        },
+        {
+            question: 'This is the Largest Cat',
+            answer: 'Siberian Tiger',
+            choices: "Lion, Jaguar, Siberian Tiger, Cougar",
+            points: 300,
+        },
+        {
+            question: 'This is the smallest cat',
+            answer:   'American Curl',
+            choices: 'Cornish Rex, American Curl, Devon Rex, Munchkin',
+            points: 400,
+        },
+        {
+            question: 'This cat is found at altitudes between 9,800 & 17,000 feet',
+            answer: 'Snow Leopard',
+            choices: 'Mountain Lion, Snow Leopard, Cougar, Ocelot',
+            points: 500,
+        },
 
-    const catTwoHundy = {
-        answer: 'Fastest'
-    };
+    ]
 
-    const catThreeHundy = {
-        answer: 'Largest'
-    };
+    //
+    //Cat Prompts
+    //
+    $('.catsForOne').click(function($event) {
+        $('.catBtnOne').attr("disabled", true);
+        prompt (catCategory[0].question, catCategory[0].choices);
+        
+    });
 
-    const catFourHundy = {
-        answer: 'Smallest'
-    };
+    $('.catsForTwo').click(function($event) {
+        prompt (catTwoHundy.answer );
+    });
 
-    const catFiveHundy = {
-        answer: 'Found in North America'
-    };
+    $('.catsForThree').click(function($event) {
+        prompt (catThreeHundy.answer );
+    });
+
+    $('.catsForFour').click(function($event) {
+        prompt (catFourHundy.answer );
+    });
+
+    $('.catsForFive').click(function($event) {
+        prompt (catFiveHundy.answer );
+    });
+
 
     //Dog Answers
 
@@ -47,13 +86,19 @@ $(document).ready(function(){
 
     //Bird answers
 
-    const birds = {
+    /*const birds = [
+        {
+            question
+        }
         answerOne: "Largest",
         answerTwo: "Smallest",
         answerThree: "Fastest",
         answerFour: "Deadliest",
         answerFive: "Rarest",
     }
+
+    ]*/
+        
 
     //Baby Answers
     
@@ -72,32 +117,10 @@ $(document).ready(function(){
         answerFive: "Most Upsets",
     }
 
-    
-    //Cat Prompts
 
-    $('.catsForOne').click(function($event) {
-        prompt (catOneHundy.answer );
-    });
-
-    $('.catsForTwo').click(function($event) {
-        prompt (catTwoHundy.answer );
-    });
-
-    $('.catsForThree').click(function($event) {
-        prompt (catThreeHundy.answer );
-    });
-
-    $('.catsForFour').click(function($event) {
-        prompt (catFourHundy.answer );
-    });
-
-    $('.catsForFive').click(function($event) {
-        prompt (catFiveHundy.answer );
-    });
-
-
+    //
     //Dog Prompts
-
+    //
     $('.dogsForOne').click(function($event) {
         prompt (dogOneHundy.answer);
     });
@@ -118,9 +141,9 @@ $(document).ready(function(){
         prompt (dogFiveHundy.answer);
     });
 
-
+    //
     //Bird Prompts
-
+    //
     $('.birdsForOne').click(function($event) {
         prompt (birds.answerOne);
     });
@@ -141,15 +164,16 @@ $(document).ready(function(){
         prompt (birds.answerFive);
     });
 
+    //
     //Babies Prompt
-
+    //
     $('.babiesForOne').click(function($event) {
         prompt (babies.src);
     });
 
-
+    //
     //Baseball Prompt
-
+    //
     $('.baseballForOne').click(function($event) {
         prompt (baseball.answerOne);
     });
