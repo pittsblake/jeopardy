@@ -10,40 +10,44 @@ $(document).ready(function(){
             question: 'This cat is Orange and Black',
             answer: 'Tiger',
             choices: 'Tiger, Lion, or Leopard',
-            points: 100,
+            //points: 100,
         },
         {
             question: 'This cat is the Fastest',
             answer: 'Cheetah',
             choices: 'Leopard, Lynx, or Cheetah',
-            points: 200,
+            //points: 200,
         },
         {
             question: 'This is the Largest Cat',
             answer: 'Siberian Tiger',
             choices: "Lion, Jaguar, Siberian Tiger, Cougar",
-            points: 300,
+            //points: 300,
         },
         {
             question: 'This is the smallest cat',
             answer:   'American Curl',
             choices: 'Cornish Rex, American Curl, Devon Rex, Munchkin',
-            points: 400,
+            //points: 400,
         },
         {
             question: 'This cat is found at altitudes between 9,800 & 17,000 feet',
             answer: 'Snow Leopard',
             choices: 'Mountain Lion, Snow Leopard, Cougar, Ocelot',
-            points: 500,
+            //points: 500,
         },
 
     ];
 
+    const catPoints = [100, 200, 300, 400, 500];
+
     //
     //Cat Prompts
     //
-    $('.catsForOne').click(function($event) {
-        $('.catBtnOne').attr("disabled", true);
+    $('.cats').on('click', function($event) {
+        $event.stopPropagation();
+        $(this).remove();
+        for (let i = 0; i < catCategory.length; i++){
         const input = prompt (catCategory[0].question, catCategory[0].choices);
         if (input === catCategory[0].answer){
             alert ('Correct!')
@@ -53,10 +57,14 @@ $(document).ready(function(){
             alert ('Incorrect!')
             score -= catCategory[0].points;
             $('#score').html(score);
-        }       
+        } 
+        catCategory.splice(0, 1);
+        { break; }
+    }      
     });
 
-    $('.catsForTwo').click(function($event) {
+/*$('.cats').click(function($event) {
+
         prompt (catTwoHundy.answer );
     });
 
@@ -70,14 +78,26 @@ $(document).ready(function(){
 
     $('.catsForFive').click(function($event) {
         prompt (catFiveHundy.answer );
-    });
+    }); */
 
 
-    //Dog Answers
+    //
+    //Dog Questions and Answers
+    //
+    const dogCategory = [
+        {
+            question: "This breed is the most common in the U.S.A",
+            answer: "Lab",
+            choices: "Golden Retriever, Lab, Yorkshire Terrier, German Shepherd",          
+         },
+        {
+            question: "This is the Largest breed",
+            answer: "Great Dane",
+            choices: "Scottish Deerhound, Great Dane, Bull Mastiff, Neapolitan Mastiff"
+        },
+    ]
 
-    const dogOneHundy ={
-        answer: "Most common"
-    };
+
 
     const dogTwoHundy ={
         answer: "Largest"
