@@ -79,6 +79,8 @@ $(document).ready(function(){
     }); */
 
 
+
+
     //
     //Dog Questions and Answers
     //
@@ -139,8 +141,41 @@ $(document).ready(function(){
         prompt (dogFiveHundy.answer);
     });
 
+    //
+    //Bird Question and Answer Array
+    //
 
-
+    const birdCategory = [
+        {
+            question: 'This is the largest living bird',
+            answer: 'Ostrich',
+            choices: 'Type: Ostrich, Cassowary, Emu, Greater Rhea',
+            points: 100,
+        },
+        {
+            question: 'This is the smallest living bird',
+            answer: 'Bee Hummingbird',
+            choices: 'Type: Goldcrest, Lesser Goldfinch, Bee Hummingbird, Weebill',
+            points: 200,
+        },
+        {
+            question: 'This is fastest living bird',
+            answer: 'Peregrine falcon',
+            choices: "Type: Golden eagle, Albatross, Peregrine falcon, Gryrafalcon",
+            points: 300,
+        },
+        {
+            question: 'This is the deadliest bird',
+            answer:   'Cassowary',
+            choices: 'Type: Cassowary, Ostrich, Emu, Lammergeier',
+            points: 400,
+        },
+        {
+            question: 'This is the rarest bird',
+            answer: 'Kagu',
+            choices: 'Type: Kagu, Crow, Eagle, Falcon',
+            points: 500,
+        },
 
 
     //
@@ -165,6 +200,41 @@ $(document).ready(function(){
     $('.birdsForFive').click(function($event) {
         prompt (birds.answerFive);
     });
+
+    //
+    //  
+    //
+    const birdCategory = [
+        {
+            question: 'This is the largest living bird',
+            answer: 'Ostrich',
+            choices: 'Type: Ostrich, Cassowary, Emu, Greater Rhea',
+            points: 100,
+        },
+        {
+            question: 'This is the smallest living bird',
+            answer: 'Bee Hummingbird',
+            choices: 'Type: Goldcrest, Lesser Goldfinch, Bee Hummingbird, Weebill',
+            points: 200,
+        },
+        {
+            question: 'This is fastest living bird',
+            answer: 'Peregrine falcon',
+            choices: "Type: Golden eagle, Albatross, Peregrine falcon, Gryrafalcon",
+            points: 300,
+        },
+        {
+            question: 'This is the deadliest bird',
+            answer:   'Cassowary',
+            choices: 'Type: Cassowary, Ostrich, Emu, Lammergeier',
+            points: 400,
+        },
+        {
+            question: 'This is the rarest bird',
+            answer: 'Kagu',
+            choices: 'Type: Kagu, Crow, Eagle, Falcon',
+            points: 500,
+        },
 
     //
     //Babies Prompt
@@ -195,21 +265,6 @@ $(document).ready(function(){
     $('.baseballForFive').click(function($event) {
         prompt (baseball.answerFive);
     });
-
-    //Bird answers
-
-    /*const birds = [
-        {
-            question
-        }
-        answerOne: "Largest",
-        answerTwo: "Smallest",
-        answerThree: "Fastest",
-        answerFour: "Deadliest",
-        answerFive: "Rarest",
-    }
-
-    ]*/
         
 
     //Baby Answers
