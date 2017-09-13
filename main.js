@@ -202,46 +202,83 @@ $(document).ready(function(){
     });
 
     //
-    //  
+    // Nick Cage Question and answer array
     //
-    const birdCategory = [
+    const nickCageCategory = [
         {
-            question: 'This is the largest living bird',
-            answer: 'Ostrich',
-            choices: 'Type: Ostrich, Cassowary, Emu, Greater Rhea',
+            question: 'This man and Tom Brady have a combined 5 Super Bowl victories',
+            answer: 'Nick Cage',
+            choices: 'Type: Nick Cage, N/a, N/a, N/a',
             points: 100,
         },
         {
-            question: 'This is the smallest living bird',
-            answer: 'Bee Hummingbird',
-            choices: 'Type: Goldcrest, Lesser Goldfinch, Bee Hummingbird, Weebill',
+            question: 'This man has an extra toe somewhere you wouldnt expect',
+            answer: 'Nick Cage',
+            choices: 'Type: Nick Cage, N/a, N/a, N/a',
             points: 200,
         },
         {
-            question: 'This is fastest living bird',
-            answer: 'Peregrine falcon',
-            choices: "Type: Golden eagle, Albatross, Peregrine falcon, Gryrafalcon",
+            question: 'This man dresses up like a mermaid in his free time',
+            answer: 'Nick Cage',
+            choices: "Type: Nick Cage, N/a, N/a, N/a",
             points: 300,
         },
         {
-            question: 'This is the deadliest bird',
-            answer:   'Cassowary',
-            choices: 'Type: Cassowary, Ostrich, Emu, Lammergeier',
+            question: 'This man rocks',
+            answer:   'Not Nick Cage',
+            choices: 'Type: Not Nick Cage, N/a, N/a, N/a',
             points: 400,
         },
         {
-            question: 'This is the rarest bird',
-            answer: 'Kagu',
-            choices: 'Type: Kagu, Crow, Eagle, Falcon',
+            question: 'My thumb looks better than...',
+            answer: 'Nick Cage',
+            choices: 'Type: Nick Cage, N/a, N/a, N/a',
             points: 500,
-        },
+        };
 
     //
-    //Babies Prompt
+    //Nick Cage Prompt
     //
     $('.babiesForOne').click(function($event) {
         prompt (babies.src);
     });
+
+
+    //
+    //Baseball Questions and Answers array
+    //
+    const baseballCategory = [
+        {
+            question: 'This is the oldest team',
+            answer: 'Braves',
+            choices: 'Type: Braves, Yankees, Red Sox, Cubs',
+            points: 100,
+        },
+        {
+            question: 'This team has the most World Series Championships',
+            answer: 'Yankees',
+            choices: 'Type: Red Sox, Cubs, Phillies, Yankees',
+            points: 200,
+        },
+        {
+            question: 'This team has the most franchise wins',
+            answer: 'Yankees',
+            choices: "Type: Yankees, Braves, Giants, Dodgers",
+            points: 300,
+        },
+        {
+            question: 'Newest Team',
+            answer:   'Rays',
+            choices: 'Type: Rays, Marlins, Astros, Blue Jays',
+            points: 400,
+        },
+        {
+            question: 'Most upsets',
+            answer: 'Braves',
+            choices: 'Type: Braves, N/a, N/a, N/a',
+            points: 500,
+        },
+
 
     //
     //Baseball Prompt
@@ -266,23 +303,7 @@ $(document).ready(function(){
         prompt (baseball.answerFive);
     });
         
-
-    //Baby Answers
     
-    const babies = {
-        src: "https://i.pinimg.com/736x/fc/e1/06/fce106e4ece99c2fc370c21eac5d36b9.jpg",
-        //answerOne: imgOne,
-    }
-
-
-    //Baseball Answers
-    const baseball = {
-        answerOne: "Oldest Team",
-        answerTwo: "Most World Series Championships",
-        answerThree: "Most Wins",
-        answerFour: "Newest Team",
-        answerFive: "Most Upsets",
-    }
 
 });
 
