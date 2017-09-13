@@ -10,36 +10,34 @@ $(document).ready(function(){
             question: 'This cat is Orange and Black',
             answer: 'Tiger',
             choices: 'Tiger, Lion, or Leopard',
-            //points: 100,
+            points: 100,
         },
         {
             question: 'This cat is the Fastest',
             answer: 'Cheetah',
             choices: 'Leopard, Lynx, or Cheetah',
-            //points: 200,
+            points: 200,
         },
         {
             question: 'This is the Largest Cat',
             answer: 'Siberian Tiger',
             choices: "Lion, Jaguar, Siberian Tiger, Cougar",
-            //points: 300,
+            points: 300,
         },
         {
             question: 'This is the smallest cat',
             answer:   'American Curl',
             choices: 'Cornish Rex, American Curl, Devon Rex, Munchkin',
-            //points: 400,
+            points: 400,
         },
         {
             question: 'This cat is found at altitudes between 9,800 & 17,000 feet',
             answer: 'Snow Leopard',
             choices: 'Mountain Lion, Snow Leopard, Cougar, Ocelot',
-            //points: 500,
+            points: 500,
         },
 
     ];
-
-    const catPoints = [100, 200, 300, 400, 500];
 
     //
     //Cat Prompts
@@ -88,65 +86,34 @@ $(document).ready(function(){
         {
             question: "This breed is the most common in the U.S.A",
             answer: "Lab",
-            choices: "Golden Retriever, Lab, Yorkshire Terrier, German Shepherd",          
+            choices: "Golden Retriever, Lab, Yorkshire Terrier, German Shepherd", 
+            points: 100,         
          },
         {
             question: "This is the Largest breed",
             answer: "Great Dane",
-            choices: "Scottish Deerhound, Great Dane, Bull Mastiff, Neapolitan Mastiff"
+            choices: "Scottish Deerhound, Great Dane, Bull Mastiff, Neapolitan Mastiff",
+            points: 200,
         },
-    ]
-
-
-
-    const dogTwoHundy ={
-        answer: "Largest"
-    };
-
-    const dogThreeHundy ={
-        answer: "Smallest"
-    };
-
-    const dogFourHundy ={
-        answer: "Police dog"
-    };
-
-    const dogFiveHundy ={
-        answer: "Best Swimmer"
-    };
-
-    //Bird answers
-
-    /*const birds = [
         {
-            question
-        }
-        answerOne: "Largest",
-        answerTwo: "Smallest",
-        answerThree: "Fastest",
-        answerFour: "Deadliest",
-        answerFive: "Rarest",
-    }
-
-    ]*/
-        
-
-    //Baby Answers
-    
-    const babies = {
-        src: "https://i.pinimg.com/736x/fc/e1/06/fce106e4ece99c2fc370c21eac5d36b9.jpg",
-        //answerOne: imgOne,
-    }
-
-
-    //Baseball Answers
-    const baseball = {
-        answerOne: "Oldest Team",
-        answerTwo: "Most World Series Championships",
-        answerThree: "Most Wins",
-        answerFour: "Newest Team",
-        answerFive: "Most Upsets",
-    }
+            question: "This is the Smallet breed",
+            answer: "Chihuahua",
+            choices: "Maltese, Chihuahua, Brussels griffon, Pomeranian",
+            points: 300,
+        },
+        {
+            question: "This breed is commonly used a police dog",
+            answer: "German Shepherd",
+            choices: "Scottish Deerhound, German Shepherd, Bull Mastiff, Neapolitan Mastiff",
+            points: 400,
+        },
+        {
+            question: "This breed is known for there great swimming abilities",
+            answer: "Newfoundland",
+            choices: "Shih Tzu, Rhodesian Ridgeback, Newfoundland, Beagle",
+            points: 500,
+        },
+    ];
 
 
     //
@@ -171,6 +138,10 @@ $(document).ready(function(){
     $('.dogsForFive').click(function($event) {
         prompt (dogFiveHundy.answer);
     });
+
+
+
+
 
     //
     //Bird Prompts
@@ -225,16 +196,38 @@ $(document).ready(function(){
         prompt (baseball.answerFive);
     });
 
+    //Bird answers
+
+    /*const birds = [
+        {
+            question
+        }
+        answerOne: "Largest",
+        answerTwo: "Smallest",
+        answerThree: "Fastest",
+        answerFour: "Deadliest",
+        answerFive: "Rarest",
+    }
+
+    ]*/
+        
+
+    //Baby Answers
+    
+    const babies = {
+        src: "https://i.pinimg.com/736x/fc/e1/06/fce106e4ece99c2fc370c21eac5d36b9.jpg",
+        //answerOne: imgOne,
+    }
 
 
-    //
-    //Score
-    //
-   // let score = 0;
-   // const scoreUpdate = () => {
-      //  $('#score').html(score);
-      // score += catCategory[0].points;
-    //}
+    //Baseball Answers
+    const baseball = {
+        answerOne: "Oldest Team",
+        answerTwo: "Most World Series Championships",
+        answerThree: "Most Wins",
+        answerFour: "Newest Team",
+        answerFive: "Most Upsets",
+    }
 
 });
 
