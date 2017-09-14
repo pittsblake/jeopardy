@@ -5,7 +5,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
     <!--Let browser know website is optimized for mobile-->
@@ -30,13 +30,24 @@
                 </tr>             
             </thead>
             <tbody>
+                <div>
                 <tr>
-                    <td class ="center catsForOne"><a class="btn catBtnOne">100</a></td>
+                    <td class ="center catsForOne"><a class="waves-effect waves-light btn modal-trigger" href="#modal1">100</a></td>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                              <h4>Modal Header</h4>
+                              <p>A bunch of text</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                          </div>
                     <td class ="center dogsForOne"><a class ="btn">100</a></td>
                     <td class ="center birdsForOne"><a class="btn">100</a></td>
                     <td class ="center babiesForOne"><a class="btn">100</a></td>
                     <td class ="center baseballForOne"><a class="btn">100</a></td>
                 </tr>
+                </div>  
                 <tr>
                     <td class ="center catsForTwo"><a class="btn">200</a></td>
                     <td class ="center dogsForTwo"><a class ="btn">200</a></td>
@@ -85,9 +96,7 @@
 
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src ="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>    <script src ="./main.js"></script>
   </body>
 </html>

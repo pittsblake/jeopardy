@@ -41,7 +41,8 @@ $(document).ready(function(){
     //
     $('.catsForOne').click(function($event) {
         $('.catBtnOne').attr("disabled", true);
-        prompt (catCategory[0].question, catCategory[0].choices);
+        $('#modal1').modal('open');
+       // prompt (catCategory[0].question, catCategory[0].choices);
         
     });
 
