@@ -235,24 +235,74 @@ $(document).ready(function(){
     //
     //Bird Prompts
     //
-    $('.birdsForOne').click(function($event) {
-        prompt (birds.answerOne);
+    $('.birds0').click(function($event) {
+        this.remove();
+        const input = prompt (birdCategory[0].question, birdCategory[0].choices);
+        if (input === birdCategory[0].answer){
+            alert('Correct!');
+            score += birdCategory[0].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[0].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.birdsForTwo').click(function($event) {
-        prompt (birds.answerTwo);
+    $('.birds1').click(function($event) {
+        this.remove();
+        const input = prompt (birdCategory[1].question, birdCategory[1].choices);
+        if (input === birdCategory[1].answer){
+            alert('Correct!');
+            score += birdCategory[1].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[1].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.birdsForThree').click(function($event) {
-        prompt (birds.answerThree);
+    $('.birds2').click(function($event) {
+        this.remove();
+        const input = prompt (birdCategory[2].question, birdCategory[2].choices);
+        if (input === birdCategory[2].answer){
+            alert('Correct!');
+            score += birdCategory[2].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[2].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.birdsForFour').click(function($event) {
-        prompt (birds.answerFour);
+    $('.birds3').click(function($event) {
+        this.remove();
+        const input = prompt (birdCategory[3].question, birdCategory[3].choices);
+        if (input === birdCategory[3].answer){
+            alert('Correct!');
+            score += birdCategory[3].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[3].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.birdsForFive').click(function($event) {
-        prompt (birds.answerFive);
+    $('.birds4').click(function($event) {
+        this.remove();
+        const input = prompt (birdCategory[4].question, birdCategory[4].choices);
+        if (input === birdCategory[4].answer){
+            alert('Correct!');
+            score += birdCategory[4].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[4].points;
+            $('#score').html(score);
+        }
     });
 
     //
@@ -262,7 +312,7 @@ $(document).ready(function(){
         {
             question: 'This man and Tom Brady have a combined 5 Super Bowl victories',
             answer: 'Nick Cage',
-            choices: 'Type: Nick Cage, N/a, N/a, N/a',
+            choices: 'Type: Nick Cage, N/A, N/A, N/A',
             points: 100,
         },
         {
@@ -294,8 +344,74 @@ $(document).ready(function(){
     //
     //Nick Cage Prompt
     //
-    $('.babiesForOne').click(function($event) {
-        prompt (babies.src);
+    $('.nickCage0').click(function($event) {
+        this.remove();
+        const input = prompt (nickCageCategory[0].question, nickCageCategory[0].choices);
+        if (input === nickCageCategory[0].answer){
+            alert('Correct!');
+            score += nickCageCategory[0].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= nickCageCategory[0].points;
+            $('#score').html(score);
+        }
+    });
+
+    $('.nickCage1').click(function($event) {
+        this.remove();
+        const input = prompt (nickCageCategory[1].question, nickCageCategory[1].choices);
+        if (input === nickCageCategory[1].answer){
+            alert('Correct!');
+            score += nickCageCategory[1].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= nickCageCategory[1].points;
+            $('#score').html(score);
+        }
+    });
+
+    $('.nickCage2').click(function($event) {
+        this.remove();
+        const input = prompt (nickCageCategory[2].question, nickCageCategory[2].choices);
+        if (input === nickCageCategory[2].answer){
+            alert('Correct!');
+            score += nickCageCategory[2].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= nickCageCategory[2].points;
+            $('#score').html(score);
+        }
+    });
+
+    $('.nickCage3').click(function($event) {
+        this.remove();
+        const input = prompt (nickCageCategory[3].question, nickCageCategory[3].choices);
+        if (input === nickCageCategory[3].answer){
+            alert('Correct!');
+            score += nickCageCategory[3].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= nickCageCategory[3].points;
+            $('#score').html(score);
+        }
+    });
+
+    $('.nickCage4').click(function($event) {
+        this.remove();
+        const input = prompt (nickCageCategory[4].question, nickCageCategory[4].choices);
+        if (input === nickCageCategory[4].answer){
+            alert('Correct!');
+            score += nickCageCategory[4].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= nickCageCategory[4].points;
+            $('#score').html(score);
+        }
     });
 
 
@@ -339,24 +455,74 @@ $(document).ready(function(){
     //
     //Baseball Prompt
     //
-    $('.baseballForOne').click(function($event) {
-        prompt (baseball.answerOne);
+    $('.baseball0').click(function($event) {
+        this.remove();
+        const input = prompt (baseballCategory[0].question, baseballCategory[0].choices);
+        if (input === baseballCategory[0].answer){
+            alert('Correct!');
+            score += baseballCategory[0].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= baseballCategory[0].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.baseballForTwo').click(function($event) {
-        prompt (baseball.answerTwo);
+    $('.baseball1').click(function($event) {
+        this.remove();
+        const input = prompt (baseballCategory[1].question, baseballCategory[1].choices);
+        if (input === baseballCategory[1].answer){
+            alert('Correct!');
+            score += baseballCategory[1].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= baseballCategory[1].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.baseballForThree').click(function($event) {
-        prompt (baseball.answerThree);
+    $('.baseball2').click(function($event) {
+        this.remove();
+        const input = prompt (baseballCategory[2].question, baseballCategory[2].choices);
+        if (input === baseballCategory[2].answer){
+            alert('Correct!');
+            score += baseballCategory[2].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= baseballCategory[2].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.baseballForFour').click(function($event) {
-        prompt (baseball.answerFour);
+    $('.baseball3').click(function($event) {
+        this.remove();
+        const input = prompt (baseballCategory[3].question, baseballCategory[3].choices);
+        if (input === baseballCategory[3].answer){
+            alert('Correct!');
+            score += baseballCategory[3].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= baseballCategory[3].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.baseballForFive').click(function($event) {
-        prompt (baseball.answerFive);
+    $('.baseball4').click(function($event) {
+        this.remove();
+        const input = prompt (baseballCategory[4].question, baseballCategory[4].choices);
+        if (input === baseballCategory[4].answer){
+            alert('Correct!');
+            score += baseballCategory[4].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= baseballCategory[4].points;
+            $('#score').html(score);
+        }
     });
         
     
