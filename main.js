@@ -174,24 +174,74 @@ $(document).ready(function(){
     //
     //Dog Prompts
     //
-    $('.dogsForOne').click(function($event) {
-        prompt (dogOneHundy.answer);
+    $('.dogs0').click(function($event) {
+        this.remove();
+        const input = prompt (dogCategory[0].question, dogCategory[0].choices);
+        if (input === dogCategory[0].answer){
+            alert('Correct!');
+            score += dogCategory[0].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= dogCategory[0].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.dogsForTwo').click(function($event) {
-        prompt (dogTwoHundy.answer);
+    $('.dogs1').click(function($event) {
+        this.remove();
+        const input = prompt (dogCategory[1].question, dogCategory[1].choices);
+        if (input === dogCategory[1].answer){
+            alert('Correct!');
+            score += dogCategory[1].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= dogCategory[1].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.dogsForThree').click(function($event) {
-        prompt (dogThreeHundy.answer);
+    $('.dogs2').click(function($event) {
+        this.remove();
+        const input = prompt (dogCategory[2].question, dogCategory[2].choices);
+        if (input === dogCategory[2].answer){
+            alert('Correct!');
+            score += dogCategory[2].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= dogCategory[2].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.dogsForFour').click(function($event) {
-        prompt (dogFourHundy.answer);
+    $('.dogs3').click(function($event) {
+        this.remove();
+        const input = prompt (dogCategory[3].question, dogCategory[3].choices);
+        if (input === dogCategory[3].answer){
+            alert('Correct!');
+            score += dogCategory[3].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= dogCategory[3].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.dogsForFive').click(function($event) {
-        prompt (dogFiveHundy.answer);
+    $('.dogs4').click(function($event) {
+        this.remove();
+        const input = prompt (dogCategory[4].question, dogCategory[4].choices);
+        if (input === dogCategory[4].answer){
+            alert('Correct!');
+            score += dogCategory[4].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= dogCategory[4].points;
+            $('#score').html(score);
+        }
     });
 
     //
