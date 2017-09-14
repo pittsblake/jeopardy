@@ -40,10 +40,22 @@ $(document).ready(function(){
     ];
 
     //
-    //Cat Prompts
+    //Cat question one
     //
-    $('.cats').on('click', function($event) {
-        $event.stopPropagation();
+    $('.cats0').on('click', function($event) {
+        this.remove();
+        const input = prompt (catCategory[0].question, catCategory[0].choices);
+        if (input === catCategory[0].answer){
+            alert('Correct!');
+            score += catCategory[0].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[0].points;
+            $('#score').html(score);
+        }
+
+        /*$event.stopPropagation();
         $(this).remove();
         for (let i = 0; i < catCategory.length; i++){
         const input = prompt (catCategory[0].question, catCategory[0].choices);
@@ -58,28 +70,69 @@ $(document).ready(function(){
         } 
         catCategory.splice(0, 1);
         { break; }
-    }      
+    }   */   
     });
 
-/*$('.cats').click(function($event) {
-
-        prompt (catTwoHundy.answer );
+    //Cat Question 2
+    $('.cats1').click(function($event) {
+        this.remove();
+        const input = prompt (catCategory[1].question, catCategory[1].choices);
+        if (input === catCategory[1].answer){
+            alert('Correct!');
+            score += catCategory[1].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[1].points;
+            $('#score').html(score);
+        }
+        
     });
 
-    $('.catsForThree').click(function($event) {
-        prompt (catThreeHundy.answer );
+    //Cat Question 3
+    $('.cats2').click(function($event) {
+        this.remove();
+        const input = prompt (catCategory[2].question, catCategory[2].choices);
+        if (input === catCategory[2].answer){
+            alert('Correct!');
+            score += catCategory[2].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[2].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.catsForFour').click(function($event) {
-        prompt (catFourHundy.answer );
+    //Cat question 4
+    $('.cats3').click(function($event) {
+        this.remove();
+        const input = prompt (catCategory[3].question, catCategory[3].choices);
+        if (input === catCategory[3].answer){
+            alert('Correct!');
+            score += catCategory[3].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[3].points;
+            $('#score').html(score);
+        }
     });
 
-    $('.catsForFive').click(function($event) {
-        prompt (catFiveHundy.answer );
-    }); */
-
-
-
+    //Cat question 5
+    $('.cats4').click(function($event) {
+        this.remove();
+        const input = prompt (catCategory[4].question, catCategory[4].choices);
+        if (input === catCategory[4].answer){
+            alert('Correct!');
+            score += catCategory[4].points;
+            $('#score').html(score);
+        } else{
+            alert('Incorrect!');
+            score -= catCategory[4].points;
+            $('#score').html(score);
+        }
+    }); 
 
     //
     //Dog Questions and Answers
@@ -175,7 +228,8 @@ $(document).ready(function(){
             answer: 'Kagu',
             choices: 'Type: Kagu, Crow, Eagle, Falcon',
             points: 500,
-        },
+        }
+    ];
 
 
     //
@@ -234,7 +288,8 @@ $(document).ready(function(){
             answer: 'Nick Cage',
             choices: 'Type: Nick Cage, N/a, N/a, N/a',
             points: 500,
-        };
+        }
+    ];
 
     //
     //Nick Cage Prompt
@@ -277,7 +332,8 @@ $(document).ready(function(){
             answer: 'Braves',
             choices: 'Type: Braves, N/a, N/a, N/a',
             points: 500,
-        },
+        }
+    ];
 
 
     //
