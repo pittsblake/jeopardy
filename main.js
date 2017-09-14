@@ -380,74 +380,99 @@ const nickCageCategory = [
 //
 //Nick Cage Prompt
 //
-$('.nickCage0').click(function($event) {
-    this.remove();
-    const input = prompt (nickCageCategory[0].question, nickCageCategory[0].choices);
-    if (input === nickCageCategory[0].answer){
-        alert('Correct!');
-        score += nickCageCategory[0].points;
-        $('#score').html(score);
-    } else{
-        alert('Incorrect!');
-        score -= nickCageCategory[0].points;
-        $('#score').html(score);
-    }
+
+//Nick 100
+$('.nickBtnOne').click(function($event) {
+    $(this).remove();        
+    $('#modal4').modal();  
 });
 
-$('.nickCage1').click(function($event) {
-    this.remove();
-    const input = prompt (nickCageCategory[1].question, nickCageCategory[1].choices);
-    if (input === nickCageCategory[1].answer){
-        alert('Correct!');
-        score += nickCageCategory[1].points;
-        $('#score').html(score);
-    } else{
-        alert('Incorrect!');
-        score -= nickCageCategory[1].points;
-        $('#score').html(score);
-    }
+$('yesNick1').click(function($event){
+    alert('Correct!');
+    score += nickCageCategory[0].points;
+    $('#score').html(score);
 });
 
-$('.nickCage2').click(function($event) {
-    this.remove();
-    const input = prompt (nickCageCategory[2].question, nickCageCategory[2].choices);
-    if (input === nickCageCategory[2].answer){
-        alert('Correct!');
-        score += nickCageCategory[2].points;
-        $('#score').html(score);
-    } else{
-        alert('Incorrect!');
-        score -= nickCageCategory[2].points;
-        $('#score').html(score);
-    }
+$('.noNick1').click(function($event){
+    alert('Incorrect!');
+    score -= nickCageCategory[0].points;
+    $('#score').html(score);
 });
 
-$('.nickCage3').click(function($event) {
-    this.remove();
-    const input = prompt (nickCageCategory[3].question, nickCageCategory[3].choices);
-    if (input === nickCageCategory[3].answer){
-        alert('Correct!');
-        score += nickCageCategory[3].points;
-        $('#score').html(score);
-    } else{
-        alert('Incorrect!');
-        score -= nickCageCategory[3].points;
-        $('#score').html(score);
-    }
+//Nick 200
+$('.nickBtnTwo').click(function($event) {
+    $(this).remove();        
+    $('#modal9').modal();  
 });
 
-$('.nickCage4').click(function($event) {
-    this.remove();
-    const input = prompt (nickCageCategory[4].question, nickCageCategory[4].choices);
-    if (input === nickCageCategory[4].answer){
-        alert('Correct!');
-        score += nickCageCategory[4].points;
-        $('#score').html(score);
-    } else{
-        alert('Incorrect!');
-        score -= nickCageCategory[4].points;
-        $('#score').html(score);
-    }
+$('.yesNick2').click(function($event){
+    alert('Correct!');
+    score += nickCageCategory[1].points;
+    $('#score').html(score);
+});
+
+$('.noNick2').click(function($event){
+    alert('Incorrect!');
+    score -= nickCageCategory[1].points;
+    $('#score').html(score);
+});
+
+
+//Nick 300
+
+$('.nickBtnThree').click(function($event) {
+    $(this).remove();        
+    $('#modal14').modal();  
+});
+
+$('.yesNick3').click(function($event){
+    alert('Correct!');
+    score += nickCageCategory[2].points;
+    $('#score').html(score);
+});
+
+$('.noNick3').click(function($event){
+    alert('Incorrect!');
+    score -= nickCageCategory[2].points;
+    $('#score').html(score);
+});
+
+//Nick 400
+
+$('.nickBtnFour').click(function($event) {
+    $(this).remove();        
+    $('#modal19').modal();  
+});
+
+$('.yesNick4').click(function($event){
+    alert('Correct!');
+    score += nickCageCategory[3].points;
+    $('#score').html(score);
+});
+
+$('.noNick4').click(function($event){
+    alert('Incorrect!');
+    score -= nickCageCategory[3].points;
+    $('#score').html(score);
+});
+
+//Nick 500
+
+$('.nickBtnFive').click(function($event) {
+    $(this).remove();        
+    $('#modal24').modal();  
+});
+
+$('.yesNick5').click(function($event){
+    alert('Correct!');
+    score += nickCageCategory[4].points;
+    $('#score').html(score);
+});
+
+$('.noNick5').click(function($event){
+    alert('Incorrect!');
+    score -= nickCageCategory[4].points;
+    $('#score').html(score);
 });
 
 
