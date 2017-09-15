@@ -4,10 +4,14 @@ $('.newGame').click(function($event){
     location.reload();
 });
 
+$('.rules').click(function($event){
+    $('#modal50').modal();
+});
+
 function replaceText() {
 let msg = prompt ('What is your name?');
 let name = msg;
-$('.welcome').html(`Welcome ${name} lets play!`).css({"color":"blue","font-size":"35px"});
+$('.welcome').html(`Welcome ${name}, lets play!`).css({"color":"blue","font-size":"35px"});
 }
 replaceText();
 

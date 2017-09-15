@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Jeopardy</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
-    
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+        media="screen,projection" />
+
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-  </head>
+</head>
 
-  <body>
-    <div class = "row center">
-        <button class="btn col s2 green newGame">New Game</button>            
+<body>
+    <div class="row center">
+        <button class="btn col s2 green z-depth-2 newGame">New Game</button>
         <h1 class="col s6 offset-s1 jeopardy">Jeopardy</h1>
+
+        <!-- Rules Modal -->
+        <button class="waves-effect waves-light btn modal-trigger z-depth-2 col s2 offset-s1 blue rules" href="#modal50">Rules</button>
+        <div id="modal50" class="modal">
+            <div class="modal-content">
+                <h3 class="center blue-text">Rules</h3>
+                <h5 class="center">Pick any category for points. If you answer the question correctly you'll receive that point value. But be
+                    careful! If you get it wrong you'll lose that amount of points! See how many points you can get!</h5>
+            </div>
+            <div class="modal-footer row">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue">Let's go!</a>
+            </div>
+        </div>
     </div>
 
-    <div class = "container">
-        <table class ="bordered table-margin">
+
+    <!-- Table -->
+    <div class="container">
+        <table class="bordered table-margin">
             <thead>
                 <tr>
-                    <th class ="center"> <h5> Cats <h5></th>
-                    <th class ="center"> <h5> Dogs </h5> </th>
-                    <th class ="center"> <h5> Birds </h5></th>
-                    <th class ="center"> <h5>Nick Cage</h5> </th>
-                    <th class ="center"> <h5>Baseball</h5> </th>
-                </tr>             
+                    <th class="center">
+                        <h5> Cats
+                            <h5>
+                    </th>
+                    <th class="center">
+                        <h5> Dogs </h5>
+                    </th>
+                    <th class="center">
+                        <h5> Birds </h5>
+                    </th>
+                    <th class="center">
+                        <h5>Nick Cage</h5>
+                    </th>
+                    <th class="center">
+                        <h5>Baseball</h5>
+                    </th>
+                </tr>
             </thead>
             <tbody>
-                
+
                 <tr>
 
-        <!--100 POINT ROW-->   
-                <!--Cats for 100-->
-                    <div>    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnOne" href="#modal1">100</a></td>
+                    <!--100 POINT ROW-->
+                    <!--Cats for 100-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnOne" href="#modal1">100</a></td>
                         <div id="modal1" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Cats for 100</h3>
@@ -52,9 +80,9 @@
                         </div>
                     </div>
 
-                <!--Dogs for 100-->
-                     <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnOne" href="#modal2">100</a></td>
+                    <!--Dogs for 100-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnOne" href="#modal2">100</a></td>
                         <div id="modal2" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Dogs for 100</h3>
@@ -69,9 +97,9 @@
                         </div>
                     </div>
 
-                <!--Birds for 100-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnOne" href="#modal3">100</a></td>
+                    <!--Birds for 100-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnOne" href="#modal3">100</a></td>
                         <div id="modal3" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Birds for 100</h3>
@@ -85,10 +113,10 @@
                             </div>
                         </div>
                     </div>
-                
-                <!--Nick for 100-->
-                <div class = "">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnOne" href="#modal4">100</a></td>
+
+                    <!--Nick for 100-->
+                    <div class="">
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnOne" href="#modal4">100</a></td>
                         <div id="modal4" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Nickolas for 100</h3>
@@ -103,9 +131,9 @@
                         </div>
                     </div>
 
-                 <!--Baseball for 100-->
-                 <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnOne" href="#modal5">100</a></td>
+                    <!--Baseball for 100-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnOne" href="#modal5">100</a></td>
                         <div id="modal5" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Baseball for 100</h3>
@@ -119,29 +147,29 @@
                             </div>
                         </div>
                     </div>
-            </tr>
+                </tr>
 
-        <!--200 POINT ROW -->
-            <tr>
-                <!-- Cats for 200-->
-                    <div>    
-                            <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnTwo" href="#modal6">200</a></td>
-                            <div id="modal6" class="modal">
-                                <div class="modal-content">
-                                    <h3 class="center blue-text">Cats for 200</h3>
-                                    <h5 class="center">This cat is the Fastest</h5>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesCat2">Cheetah</a>
-                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Lion</a>
-                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Leopard</a>
-                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Panther</a>
-                                </div>
+                <!--200 POINT ROW -->
+                <tr>
+                    <!-- Cats for 200-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnTwo" href="#modal6">200</a></td>
+                        <div id="modal6" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Cats for 200</h3>
+                                <h5 class="center">This cat is the Fastest</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesCat2">Cheetah</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Lion</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Leopard</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Panther</a>
                             </div>
                         </div>
-                <!--Dogs for 200-->
-                    <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnTwo" href="#modal7">200</a></td>
+                    </div>
+                    <!--Dogs for 200-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnTwo" href="#modal7">200</a></td>
                         <div id="modal7" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Dogs for 200</h3>
@@ -155,10 +183,10 @@
                             </div>
                         </div>
                     </div>
-                    
-                <!--Birds for 200-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnTwo" href="#modal8">200</a></td>
+
+                    <!--Birds for 200-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnTwo" href="#modal8">200</a></td>
                         <div id="modal8" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Birds for 200</h3>
@@ -172,10 +200,10 @@
                             </div>
                         </div>
                     </div>
-                
-                <!--Nick for 200-->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnTwo" href="#modal9">200</a></td>
+
+                    <!--Nick for 200-->
+                    <div class="">
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnTwo" href="#modal9">200</a></td>
                         <div id="modal9" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Nickolas for 200</h3>
@@ -190,9 +218,9 @@
                         </div>
                     </div>
 
-                <!--Baseball for 200-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnTwo" href="#modal10">200</a></td>
+                    <!--Baseball for 200-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnTwo" href="#modal10">200</a></td>
                         <div id="modal10" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Baseball for 200</h3>
@@ -206,15 +234,15 @@
                             </div>
                         </div>
                     </div>
-            </tr>
+                </tr>
 
 
-        <!-- 300 POINT ROW -->    
-            <tr>
-                <!-- Cats for 300-->
-                <div>    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnThree" href="#modal11">300</a></td>
-                        
+                <!-- 300 POINT ROW -->
+                <tr>
+                    <!-- Cats for 300-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnThree" href="#modal11">300</a></td>
+
                         <div id="modal11" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Cats for 300</h3>
@@ -227,12 +255,12 @@
                                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat3">Panther</a>
                             </div>
                         </div>
-                    
-                </div>
-                
-                <!--Dogs for 300-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnThree" href="#modal12">300</a></td>
+
+                    </div>
+
+                    <!--Dogs for 300-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnThree" href="#modal12">300</a></td>
                         <div id="modal12" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Dogs for 300</h3>
@@ -247,9 +275,9 @@
                         </div>
                     </div>
 
-                <!--Birds for 300-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnThree" href="#modal13">300</a></td>
+                    <!--Birds for 300-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnThree" href="#modal13">300</a></td>
                         <div id="modal13" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Birds for 300</h3>
@@ -264,9 +292,9 @@
                         </div>
                     </div>
 
-                <!-- Nick for 300 -->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnThree" href="#modal14">300</a></td>
+                    <!-- Nick for 300 -->
+                    <div class="">
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnThree" href="#modal14">300</a></td>
                         <div id="modal14" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Nickolas for 300</h3>
@@ -281,9 +309,9 @@
                         </div>
                     </div>
 
-                <!--Baseball for 300-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnThree" href="#modal15">300</a></td>
+                    <!--Baseball for 300-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnThree" href="#modal15">300</a></td>
                         <div id="modal15" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Baseball for 300</h3>
@@ -297,14 +325,14 @@
                             </div>
                         </div>
                     </div>
-            </tr>
+                </tr>
 
-         <!-- 400 POINT ROW -->   
-            <tr>
-                <!-- Cats for 400-->
-                <div>    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnFour" href="#modal16">400</a></td>
-                        
+                <!-- 400 POINT ROW -->
+                <tr>
+                    <!-- Cats for 400-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnFour" href="#modal16">400</a></td>
+
                         <div id="modal16" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Cats for 400</h3>
@@ -317,12 +345,12 @@
                                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat4">Munchkin</a>
                             </div>
                         </div>
-                    
-                </div>
 
-                <!--Dogs for 400-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnFour" href="#modal17">400</a></td>
+                    </div>
+
+                    <!--Dogs for 400-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnFour" href="#modal17">400</a></td>
                         <div id="modal17" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Dogs for 400</h3>
@@ -337,9 +365,9 @@
                         </div>
                     </div>
 
-                <!--Birds for 400-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnFour" href="#modal18">400</a></td>
+                    <!--Birds for 400-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnFour" href="#modal18">400</a></td>
                         <div id="modal18" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Birds for 400</h3>
@@ -354,9 +382,9 @@
                         </div>
                     </div>
 
-                <!-- Nick for 400 -->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnFour" href="#modal19">400</a></td>
+                    <!-- Nick for 400 -->
+                    <div class="">
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnFour" href="#modal19">400</a></td>
                         <div id="modal19" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Nickolas for 400</h3>
@@ -371,9 +399,9 @@
                         </div>
                     </div>
 
-                <!--Baseball for 400-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnFour" href="#modal20">400</a></td>
+                    <!--Baseball for 400-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnFour" href="#modal20">400</a></td>
                         <div id="modal20" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Baseball for 400</h3>
@@ -387,14 +415,14 @@
                             </div>
                         </div>
                     </div>
-            </tr>
+                </tr>
 
-        <!-- 500 POINT ROW -->    
-            <tr>
-                <!-- Cats for 500-->
-                <div>    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnFive" href="#modal21">500</a></td>
-                        
+                <!-- 500 POINT ROW -->
+                <tr>
+                    <!-- Cats for 500-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnFive" href="#modal21">500</a></td>
+
                         <div id="modal21" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Cats for 500</h3>
@@ -407,12 +435,12 @@
                                 <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat5">Cougar</a>
                             </div>
                         </div>
-                    
-                </div>
 
-                <!--Dogs for 500-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnFive" href="#modal22">500</a></td>
+                    </div>
+
+                    <!--Dogs for 500-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnFive" href="#modal22">500</a></td>
                         <div id="modal22" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Dogs for 500</h3>
@@ -427,9 +455,9 @@
                         </div>
                     </div>
 
-                <!--Birds for 500-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnFive" href="#modal23">500</a></td>
+                    <!--Birds for 500-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnFive" href="#modal23">500</a></td>
                         <div id="modal23" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Birds for 500</h3>
@@ -444,9 +472,9 @@
                         </div>
                     </div>
 
-                <!-- Nick for 500 -->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnFive" href="#modal24">500</a></td>
+                    <!-- Nick for 500 -->
+                    <div class="">
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnFive" href="#modal24">500</a></td>
                         <div id="modal24" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Nickolas for 500</h3>
@@ -461,9 +489,9 @@
                         </div>
                     </div>
 
-                <!--Baseball for 500-->
-                <div>   
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnFive" href="#modal25">500</a></td>
+                    <!--Baseball for 500-->
+                    <div>
+                        <td class="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnFive" href="#modal25">500</a></td>
                         <div id="modal25" class="modal">
                             <div class="modal-content">
                                 <h3 class="center blue-text">Baseball for 500</h3>
@@ -477,36 +505,34 @@
                             </div>
                         </div>
                     </div>
-            </tr>
-        </tbody>
-    </table>
+                </tr>
+            </tbody>
+        </table>
 
-    <div class="row center">
-         <h5 class="col s8 push-s2 welcome"></h5>
-    </div>
+        <div class="row center">
+            <h5 class="col s8 push-s2 welcome"></h5>
+        </div>
 
-    <div class="row center">
+        <div class="row center">
             <div class="col s6 push-s3">
                 <h4 class="underline">Score</h4>
             </div>
-    </div>
-
-    <div class= "row center">
-        <div>
-            <h1 id="score" class="card-panel col s4 offset-s4 green z-depth-5">0</h1>
         </div>
+
+        <div class="row center">
+            <div>
+                <h1 id="score" class="card-panel col s4 offset-s4 green z-depth-5">0</h1>
+            </div>
+        </div>
+
     </div>
 
-</div>
 
 
-
-<!--Import jQuery before materialize.js-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src ="./main.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
-
-
-
