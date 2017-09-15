@@ -9,17 +9,19 @@
     
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div class = "center">
-        <h1 class ="underline">Jeopardy</h1>
+    <div class = "row center">
+        <button class ="btn col s2 green newGame">New Game</button>            
+        <h1 class ="#ffcdd2 col s6 offset-s1 jeopardy">Jeopardy</h1>
     </div>
 
     <div class = "container">
-        <table class ="bordered ">
-            <thead class = "underline">
+        <table class ="bordered table-margin">
+            <thead>
                 <tr>
                     <th class ="center"> <h5> Cats <h5></th>
                     <th class ="center"> <h5> Dogs </h5> </th>
@@ -33,155 +35,465 @@
                 <tr>
 
         <!--100 POINT ROW-->   
-                    <!--Cats for 100-->
-                    <div class = "cat100">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red catBtnOne" href="#modal1">100</a></td>
+                <!--Cats for 100-->
+                    <div>    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnOne" href="#modal1">100</a></td>
                         <div id="modal1" class="modal">
                             <div class="modal-content">
-                                <h3>Cats for 100</h3>
-                                <h5>This big cat is orange and black</h5>
+                                <h3 class="center blue-text">Cats for 100</h3>
+                                <h5 class="center">This big cat is orange and black</h5>
                             </div>
-                            <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yes">Tiger</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat no">Lion</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat no">Leopard</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat no">Panther</a>
+                            <div class="modal-footer row">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue col s3 yes">Tiger</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue col s3 no">Lion</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue col s3 no">Leopard</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue col s3 no">Panther</a>
                             </div>
                         </div>
                     </div>
 
-                <td class ="center"><a class ="btn red dogs0">100</a></td>
-                <td class ="center"><a class="btn red birds0">100</a></td>
-                
-                <!--Nick for 100-->
-                <div class = "">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red nickBtnOne" href="#modal4">100</a></td>
-                        <div id="modal4" class="modal">
+                <!--Dogs for 100-->
+                     <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnOne" href="#modal2">100</a></td>
+                        <div id="modal2" class="modal">
                             <div class="modal-content">
-                                <h3>Nickolas for 100</h3>
-                                <h5>This man and Tom Brady have a combined 5 Super Bowl victories</h5>
+                                <h3 class="center blue-text">Dogs for 100</h3>
+                                <h5 class="center">This breed is the most common in the U.S.A</h5>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yesNick1">Nick Cage</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick1">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick1">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick1">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesDog1">Lab</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog1">Golden Retriever</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog1">German Shepherd</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog1">Maltese</a>
                             </div>
                         </div>
                     </div>
-                <td class ="center"><a class="btn red baseball0">100</a></td>
+
+                <!--Birds for 100-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnOne" href="#modal3">100</a></td>
+                        <div id="modal3" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Birds for 100</h3>
+                                <h5 class="center">This is the largest living bird</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBird1">Ostrich</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird1">Cassowary</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird1">Emu</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird1">Greater Rhea</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!--Nick for 100-->
+                <div class = "">    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnOne" href="#modal4">100</a></td>
+                        <div id="modal4" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Nickolas for 100</h3>
+                                <h5 class="center">This man and Tom Brady have a combined 5 Super Bowl victories</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick1">Nick Cage</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick1">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick1">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick1">N/A</a>
+                            </div>
+                        </div>
+                    </div>
+
+                 <!--Baseball for 100-->
+                 <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnOne" href="#modal5">100</a></td>
+                        <div id="modal5" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Baseball for 100</h3>
+                                <h5 class="center">This is the oldest team</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball1">Yankees</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBaseball1">Braves</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball1">Red Sox</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball1">Cubs</a>
+                            </div>
+                        </div>
+                    </div>
             </tr>
 
         <!--200 POINT ROW -->
             <tr>
-                <td class ="center"><a class="btn red cats1">200</a></td>
-                <td class ="center"><a class ="btn red dogs1">200</a></td>
-                <td class ="center"><a class="btn red birds1">200</a></td>
-                <!--Nick for 200-->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red nickBtnTwo" href="#modal9">200</a></td>
-                        <div id="modal9" class="modal">
+                <!-- Cats for 200-->
+                    <div>    
+                            <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnTwo" href="#modal6">200</a></td>
+                            <div id="modal6" class="modal">
+                                <div class="modal-content">
+                                    <h3 class="center blue-text">Cats for 200</h3>
+                                    <h5 class="center">This cat is the Fastest</h5>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesCat2">Cheetah</a>
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Lion</a>
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Leopard</a>
+                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat2">Panther</a>
+                                </div>
+                            </div>
+                        </div>
+                <!--Dogs for 200-->
+                    <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnTwo" href="#modal7">200</a></td>
+                        <div id="modal7" class="modal">
                             <div class="modal-content">
-                                <h3>Nickolas for 200</h3>
-                                <h5>This man has an extra toe somewhere you wouldnt expect</h5>
+                                <h3 class="center blue-text">Dogs for 200</h3>
+                                <h5 class="center">This is the Largest breed</h5>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yesNick2">Nick Cage</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick2">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick2">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick2">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog2">Scottish Deerhound</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog2">Bull Mastiff</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesDog2">Great Dane</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog2">Neapolitan Mastiff</a>
                             </div>
                         </div>
                     </div>
-                <td class ="center"><a class="btn red baseball1">200</a></td>
+                    
+                <!--Birds for 200-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnTwo" href="#modal8">200</a></td>
+                        <div id="modal8" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Birds for 200</h3>
+                                <h5 class="center">This is the smallest living bird</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird2">Lesser Goldfinch</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBird2">Bee HummingBird</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird2">Goldcrest</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird2">Weebill</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!--Nick for 200-->
+                <div class="">    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnTwo" href="#modal9">200</a></td>
+                        <div id="modal9" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Nickolas for 200</h3>
+                                <h5 class="center">This man has an extra toe somewhere you wouldnt expect</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick2">Nick Cage</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick2">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick2">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick2">N/A</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Baseball for 200-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnTwo" href="#modal10">200</a></td>
+                        <div id="modal10" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Baseball for 200</h3>
+                                <h5 class="center">This team has the most World Series Championships</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball2">Red Sox</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBaseball2">Yankees</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball2">Cubs</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball2">Giants</a>
+                            </div>
+                        </div>
+                    </div>
             </tr>
 
 
         <!-- 300 POINT ROW -->    
             <tr>
-                <td class ="center"><a class="btn red cats2">300</a></td>
-                <td class ="center"><a class="btn red dogs2">300</a></td>
-                <td class ="center"><a class="btn red birds2">300</a></td>
-
-                <!-- Nick for 300 -->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red nickBtnThree" href="#modal14">300</a></td>
-                        <div id="modal14" class="modal">
+                <!-- Cats for 300-->
+                <div>    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnThree" href="#modal11">300</a></td>
+                        
+                        <div id="modal11" class="modal">
                             <div class="modal-content">
-                                <h3>Nickolas for 300</h3>
-                                <h5>This man dresses up like a mermaid in his free time</h5>
+                                <h3 class="center blue-text">Cats for 300</h3>
+                                <h5 class="center">This is the Largest Cat</h5>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yesNick3">Nick Cage</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick3">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick3">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick3">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesCat3">Siberian Tiger</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat3">Lion</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat3">Leopard</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat3">Panther</a>
+                            </div>
+                        </div>
+                    
+                </div>
+                
+                <!--Dogs for 300-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnThree" href="#modal12">300</a></td>
+                        <div id="modal12" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Dogs for 300</h3>
+                                <h5 class="center">This is the Smallet breed</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog3">Maltese</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesDog3">Chihuahua</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog3">Brussels Griffon</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog2">Pomeranian</a>
                             </div>
                         </div>
                     </div>
-                <td class ="center"><a class="btn red baseball2">300</a></td>
+
+                <!--Birds for 300-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnThree" href="#modal13">300</a></td>
+                        <div id="modal13" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Birds for 300</h3>
+                                <h5 class="center">This is fastest living bird</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird3">Gryafalcon</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird3">Albtross</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird3">Golden Eagle</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBird3">Peregrine Falcon</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Nick for 300 -->
+                <div class="">    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnThree" href="#modal14">300</a></td>
+                        <div id="modal14" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Nickolas for 300</h3>
+                                <h5 class="center">This man dresses up like a mermaid in his free time</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick3">Nick Cage</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick3">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick3">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick3">N/A</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Baseball for 300-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnThree" href="#modal15">300</a></td>
+                        <div id="modal15" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Baseball for 300</h3>
+                                <h5 class="center">This team has the most franchise wins</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball3">Braves</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball3">Phillies</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBaseball3">Yankees</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball3">Giants</a>
+                            </div>
+                        </div>
+                    </div>
             </tr>
 
          <!-- 400 POINT ROW -->   
             <tr>
-                <td class ="center"><a class="btn red cats3">400</a></td>
-                <td class ="center"><a class="btn red dogs3">400</a></td>
-                <td class ="center"><a class="btn red birds3">400</a></td>
-                <!-- Nick for 400 -->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red nickBtnFour" href="#modal19">400</a></td>
-                        <div id="modal19" class="modal">
+                <!-- Cats for 400-->
+                <div>    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnFour" href="#modal16">400</a></td>
+                        
+                        <div id="modal16" class="modal">
                             <div class="modal-content">
-                                <h3>Nickolas for 400</h3>
-                                <h5>This man rocks</h5>
+                                <h3 class="center blue-text">Cats for 400</h3>
+                                <h5 class="center">This is the smallest cat</h5>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yesNick4">Not Nick Cage</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick4">Anyone</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick4">Anyone</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick4">Anyone</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat4">Devon Rex</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat4">Cornish Rex</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesCat4">American Curl</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat4">Munchkin</a>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                <!--Dogs for 400-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnFour" href="#modal17">400</a></td>
+                        <div id="modal17" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Dogs for 400</h3>
+                                <h5 class="center">This breed is commonly used a police dog</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog4">Maltese</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesDog4">German Shepherd</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog4">Brussels Griffon</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog4">Pomeranian</a>
                             </div>
                         </div>
                     </div>
-                <td class ="center"><a class="btn red baseball3">400</a></td>
+
+                <!--Birds for 400-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnFour" href="#modal18">400</a></td>
+                        <div id="modal18" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Birds for 400</h3>
+                                <h5 class="center">This is the deadliest bird</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBird4">Cassowary</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird4">Ostrich</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird4">Lammergeier</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird4">Emu</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Nick for 400 -->
+                <div class="">    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnFour" href="#modal19">400</a></td>
+                        <div id="modal19" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Nickolas for 400</h3>
+                                <h5 class="center">This man rocks</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick4">Not Nick Cage</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick4">Anyone</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick4">Anyone</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick4">Anyone</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Baseball for 400-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnFour" href="#modal20">400</a></td>
+                        <div id="modal20" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Baseball for 400</h3>
+                                <h5 class="center">This team is the Newest</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball4">Astros</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball4">Marlins</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball4">Nationals</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBaseball4">Rays</a>
+                            </div>
+                        </div>
+                    </div>
             </tr>
 
         <!-- 500 POINT ROW -->    
             <tr>
-                <td class ="center"><a class="btn red cats4">500</a></td>
-                <td class ="center"><a class="btn red dogs4">500</a></td>
-                <td class ="center"><a class="btn red birds4">500</a></td>
-
-                <!-- Nick for 500 -->
-                <div class="">    
-                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red nickBtnFive" href="#modal24">500</a></td>
-                        <div id="modal24" class="modal">
+                <!-- Cats for 500-->
+                <div>    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 catBtnFive" href="#modal21">500</a></td>
+                        
+                        <div id="modal21" class="modal">
                             <div class="modal-content">
-                                <h3>Nickolas for 500</h3>
-                                <h5>My thumb looks better than...</h5>
+                                <h3 class="center blue-text">Cats for 500</h3>
+                                <h5 class="center">This cat is found at altitudes between 9,800 - 17,000 feet</h5>
                             </div>
                             <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat yesNick5">Nick Cage</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick5">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick5">N/A</a>
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat noNick5">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat5">Mountain lion</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat5">Ocelot</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesCat5">Snow Leopard</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noCat5">Cougar</a>
+                            </div>
+                        </div>
+                    
+                </div>
+
+                <!--Dogs for 500-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 dogBtnFive" href="#modal22">500</a></td>
+                        <div id="modal22" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Dogs for 500</h3>
+                                <h5 class="center">This breed is known for there great swimming abilities</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog5">Shih Tzu</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesDog5">Newfoundland</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog5">Rhodesian Ridgeback</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noDog5">Beagle</a>
                             </div>
                         </div>
                     </div>
-                <td class ="center"><a class="btn red baseball4">500</a></td>
+
+                <!--Birds for 500-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 birdBtnFive" href="#modal23">500</a></td>
+                        <div id="modal23" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Birds for 500</h3>
+                                <h5 class="center">This is the rarest bird</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird5">Falcon</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird5">Bald Eagle</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBird5">Kagu</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBird5">Crow</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Nick for 500 -->
+                <div class="">    
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 nickBtnFive" href="#modal24">500</a></td>
+                        <div id="modal24" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Nickolas for 500</h3>
+                                <h5 class="center">My thumb looks better than...</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesNick5">Nick Cage</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick5">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick5">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noNick5">N/A</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--Baseball for 500-->
+                <div>   
+                        <td class ="center"><a class="waves-effect waves-light btn modal-trigger red z-depth-5 baseballBtnFive" href="#modal25">500</a></td>
+                        <div id="modal25" class="modal">
+                            <div class="modal-content">
+                                <h3 class="center blue-text">Baseball for 500</h3>
+                                <h5 class="center">Most upsets</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball5">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball5">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue noBaseball5">N/A</a>
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat btn blue yesBaseball5">Braves</a>
+                            </div>
+                        </div>
+                    </div>
             </tr>
         </tbody>
     </table>
 
     <div class="row center">
+         <h5 class="col s8 push-s2 welcome"></h5>
+    </div>
+
+    <div class="row center">
             <div class="col s6 push-s3">
-                <h3 class="underline">Score</h3>
+                <h4 class="underline">Score</h4>
             </div>
     </div>
-    
+
     <div class= "row center">
         <div>
-            <h2 id="score">0</h2>
+            <h1 id="score" class="card-panel col s4 offset-s4 blue z-depth-5">0</h1>
         </div>
     </div>
 

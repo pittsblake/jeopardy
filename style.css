@@ -1,5 +1,6 @@
 .underline{
     text-decoration: underline;
+    margin: 0 auto;
 };
 
 .space-under{
@@ -12,4 +13,20 @@
 
 #dialogBox {
     background: red;
-}
+};
+
+.table-margin{
+    margin: 0 auto;
+};
+
+.jeopardy{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 75px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+};
+
+.greeting{
+    font-size: 50px;
+    font-weight: bold;
+};
