@@ -7,7 +7,7 @@ The goal of this project was to make a fully functional game that replicates the
 
 #link to app
 
-
+http://blake-pitts-jeopardy.bitballoon.com/
 
 #link to Trello
 https://trello.com/b/wn44eoGR/jeopardy
